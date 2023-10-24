@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matching Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="hard">
+      <!-- CHOSING DIFFICULTY -->
+
+      <section class="choosing-level">
+        <h2>MEMORY GAME</h2>
+        <p>Select Your Difficulty:</p>
+        <div class="difficulty">
+          <button class="easy-btn">EASY</button>
+          <button class="medium-btn">MEDIUM</button>
+          <button class="hard-btn">HARD</button>
+          <button class="go-btn" id="go-btn">GO</button>
+        </div>
+      </section>
+
+      <!-- BASED ON DIFFICULTY, SHOWS DIFFERENT WELCOME SCREEN TO GAME -->
+      <section class="welcome">
+        <h2>WELCOME</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nam
+          accusantium, quibusdam voluptatum, omnis eos similique cumque
+          excepturi sequi repellendus reprehenderit nemo asperiores. Tempore
+          reiciendis tenetur sed consequatur ullam accusamus?
+        </p>
+      </section>
+
+      <!-- where ever the "easy"/difficulty class is, is where the CSS will change 
+      based on the selection -->
+      <!-- THIS IS THE MAIN GAME SCREEN, WHERE YOU CHOSE CARDS N STUFF -->
+      <section class="playing-game">
+        <div id="header-pg">
+          <button class="level-btn">CHANGE<br>LEVEL</button>
+          <h2>SLAAAAY</h2>
+          <button class="mute-btn">MUTE</button>
+        </div>
+
+        <div class="game-control">
+          <button class="start-btn">START</button>
+          <p class="timer">01:00</p>
+          <button class="reset-btn">RESET</button>
+        </div>
+
+        <div class="card-container"></div>
+      </section>
+
+      <!-- THIS IS THE POP UP AT THE END -->
+      <section class="result">
+        <div class="win">
+          <h2>You Win!</h2>
+          <p class="win-message"></p>
+          <button class="play-again">Play Again?</button>
+        </div>
+        <div class="lose">
+          <p class="lose-message">Sorry you lose</p>
+          <button class="play-again">Play Again?</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
